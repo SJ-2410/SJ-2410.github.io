@@ -1,180 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Swati Joshi — aspiring Data Analyst portfolio." />
-  <title>Swati Joshi | Data Analyst Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Swati Joshi — Data Analyst portfolio featuring SQL and Python data analytics projects.">
+  <title>Swati Joshi | Data Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="#home">SJ<span>.</span></a>
-    <button class="menu" aria-label="Open menu">☰</button>
-    <nav>
+  <header class="navbar">
+    <a class="brand" href="#home">SJ<span>.</span></a>
+    <button class="menu-btn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">ASPIRING DATA ANALYST</p>
-        <h1>Hi, I'm <span>Swati Joshi.</span></h1>
-        <h2>I turn data into clear, useful insights.</h2>
-        <p class="lead">
-          BCA graduate with hands-on practice in SQL, Python, Excel, Power BI
-          and data visualization. I'm looking for an opportunity to start my
-          career in data analytics.
-        </p>
-        <div class="actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn secondary" href="#contact">Contact Me</a>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="availability"><span></span> Open to Data Analytics opportunities</div>
+        <p class="kicker">ASPIRING DATA ANALYST</p>
+        <h1>Turning <em>data</em><br>into insights.</h1>
+        <p class="hero-text">I'm Swati Joshi, a BCA graduate building my career in data analytics. I enjoy working with data, finding patterns and presenting insights clearly.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#projects">Explore my work <span>↓</span></a>
+          <a class="btn btn-light" href="https://www.linkedin.com/in/swati-joshi-3a6613349" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
       </div>
-      <div class="hero-card">
-        <div class="avatar">SJ</div>
-        <p>Data Analytics</p>
-        <div class="mini-stats">
-          <div><strong>SQL</strong><span>Analysis</span></div>
-          <div><strong>Python</strong><span>EDA</span></div>
-          <div><strong>BI</strong><span>Dashboards</span></div>
-        </div>
+      <div class="hero-visual">
+        <div class="data-orbit orbit-1"></div>
+        <div class="data-orbit orbit-2"></div>
+        <div class="profile-badge"><strong>SJ</strong><span>Data<br>Analytics</span></div>
+        <div class="float-card fc-1"><span class="dot"></span><strong>SQL</strong><small>Query & analysis</small></div>
+        <div class="float-card fc-2"><span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><strong>Python</strong><small>EDA & visualization</small></div>
       </div>
     </section>
 
-    <section id="about" class="section two-col">
+    <section class="section intro-grid" id="about">
+      <div class="section-label">01 / ABOUT</div>
       <div>
-        <p class="eyebrow">ABOUT ME</p>
-        <h2>Curious about data and focused on solving problems.</h2>
-      </div>
-      <div class="text">
-        <p>
-          I'm a BCA graduate building my career in data analytics. I enjoy
-          cleaning data, finding patterns, writing SQL queries and turning
-          results into simple visual stories.
-        </p>
-        <p>
-          My portfolio includes practice projects using SQL, Python,
-          spreadsheets and visualization tools. I'm continuously improving
-          my analytical and business problem-solving skills.
-        </p>
-        <a class="text-link" href="#contact">Let's connect →</a>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <p class="eyebrow">SKILLS</p>
-      <h2>Tools I work with</h2>
-      <div class="skills-grid">
-        <div class="skill"><strong>SQL</strong><span>Queries · Joins · Aggregations</span></div>
-        <div class="skill"><strong>Python</strong><span>Pandas · Matplotlib · EDA</span></div>
-        <div class="skill"><strong>Excel</strong><span>Analysis · Formulas · Reporting</span></div>
-        <div class="skill"><strong>Power BI</strong><span>Dashboards · Visualization</span></div>
-        <div class="skill"><strong>Tableau</strong><span>Visual analytics</span></div>
-        <div class="skill"><strong>Google Sheets</strong><span>Analysis · Collaboration</span></div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">PROJECTS</p>
-          <h2>Selected work</h2>
+        <h2>Analytical mindset.<br><span>Curious learner.</span></h2>
+        <p class="body-copy">I’m interested in using data to understand problems and communicate useful findings. My practice projects cover SQL, Python, data exploration and visualization.</p>
+        <p class="body-copy">I’m continuously strengthening my technical and business problem-solving skills while looking for an opportunity to begin my professional journey in data analytics.</p>
+        <div class="quick-links">
+          <a href="https://github.com/SJ-2410" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/swati-joshi-3a6613349" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
-        <p class="muted">Explore my data analytics projects on GitHub.</p>
-      </div>
-      <div class="projects-grid">
-
-        <article class="project">
-          <div class="project-number">01</div>
-          <h3>Retail Sales Analysis</h3>
-          <p>SQL-based analysis of retail sales data to explore sales performance, customer trends and business insights.</p>
-          <div class="tags"><span>SQL</span><span>Data Analysis</span></div>
-          <a href="https://github.com/SJ-2410/Retail-Sales-Analysis" target="_blank" rel="noopener">View on GitHub ↗</a>
-        </article>
-
-        <article class="project">
-          <div class="project-number">02</div>
-          <h3>Granola Health Analysis</h3>
-          <p>Exploration of granola nutrition data to compare health-related characteristics and identify useful patterns.</p>
-          <div class="tags"><span>Python</span><span>Pandas</span><span>EDA</span></div>
-          <a href="https://github.com/SJ-2410/Granola-Health-Analysis" target="_blank" rel="noopener">View on GitHub ↗</a>
-        </article>
-
-        <article class="project">
-          <div class="project-number">03</div>
-          <h3>Deepest Diving Animals Analysis</h3>
-          <p>A data exploration project examining diving depth information and comparing patterns across animals.</p>
-          <div class="tags"><span>Python</span><span>Data Analysis</span></div>
-          <a href="https://github.com/SJ-2410/Deepest-Diving-Animals-Analysis" target="_blank" rel="noopener">View on GitHub ↗</a>
-        </article>
-
-        <article class="project">
-          <div class="project-number">04</div>
-          <h3>Flight Delays Analysis</h3>
-          <p>Analysis of flight delay data to explore delay patterns and communicate findings through data.</p>
-          <div class="tags"><span>Python</span><span>Pandas</span><span>Visualization</span></div>
-          <a href="https://github.com/SJ-2410/Flight-Delays-Analysis" target="_blank" rel="noopener">View on GitHub ↗</a>
-        </article>
-
-        <article class="project">
-          <div class="project-number">05</div>
-          <h3>Coffee Survey Analysis</h3>
-          <p>Exploration of coffee survey responses to understand preferences, habits and interesting relationships in the data.</p>
-          <div class="tags"><span>Python</span><span>Pandas</span><span>Visualization</span></div>
-          <a href="https://github.com/SJ-2410/Coffee-Survey-Analysis" target="_blank" rel="noopener">View on GitHub ↗</a>
-        </article>
-
-        <article class="project">
-          <div class="project-number">06</div>
-          <h3>A Century of Top Songs Analysis</h3>
-          <p>Data exploration of top songs across a century to discover trends and patterns in music data.</p>
-          <div class="tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
-          <a href="https://github.com/SJ-2410/A-Century-of-Top-Songs-Analysis" target="_blank" rel="noopener">View on GitHub ↗</a>
-        </article>
-
       </div>
     </section>
 
-    <section id="certifications" class="section">
-      <p class="eyebrow">CERTIFICATIONS</p>
-      <h2>Learning & credentials</h2>
-      <div class="cert-list">
-        <div><strong>Data Analytics Essentials</strong><span>Cisco Networking Academy · Jun 2026</span></div>
-        <div><strong>AI Fundamentals</strong><span>Cisco Networking Academy · Jun 2026</span></div>
-        <div><strong>YUVA AI for All</strong><span>NASSCOM · Jan 2026</span></div>
-        <div><strong>Introduction to Tableau</strong><span>Simplilearn · Sep 2025</span></div>
-        <div><strong>SQL for Data Science</strong><span>Simplilearn · Sep 2025</span></div>
-        <div><strong>Deloitte Data Analytics Job Simulation</strong><span>Forage · Aug 2025</span></div>
-        <div><strong>Career Essentials in Data Analysis</strong><span>LinkedIn · Aug 2025</span></div>
-        <div><strong>Python Full Course</strong><span>GeeksforGeeks · Jul 2025</span></div>
+    <section class="section skills-section" id="skills">
+      <div class="section-label">02 / SKILLS</div>
+      <div>
+        <h2>My toolkit</h2>
+        <div class="skill-list">
+          <div class="skill-row"><strong>SQL</strong><span>Queries · Joins · Aggregations · Data analysis</span></div>
+          <div class="skill-row"><strong>Python</strong><span>Pandas · Matplotlib · Exploratory data analysis</span></div>
+          <div class="skill-row"><strong>Excel</strong><span>Data analysis · Formulas · Reporting</span></div>
+          <div class="skill-row"><strong>Power BI</strong><span>Dashboards · Data visualization</span></div>
+          <div class="skill-row"><strong>Tableau</strong><span>Visual analytics</span></div>
+          <div class="skill-row"><strong>Google Sheets</strong><span>Analysis · Collaboration</span></div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <p class="eyebrow">CONTACT</p>
-      <h2>Let's connect.</h2>
-      <p>I'm open to entry-level Data Analyst, Data Analytics Internship and Apprenticeship opportunities.</p>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/swati-joshi-3a6613349" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="https://github.com/SJ-2410" target="_blank" rel="noopener">GitHub ↗</a>
+    <section class="section projects-section" id="projects">
+      <div class="section-label">03 / PROJECTS</div>
+      <div class="wide-content">
+        <div class="projects-heading">
+          <div><h2>Selected work</h2><p>Practice projects focused on exploring data and communicating patterns.</p></div>
+          <a href="https://github.com/SJ-2410" target="_blank" rel="noopener" class="all-projects">All on GitHub ↗</a>
+        </div>
+        <div class="project-grid">
+          
+      <article class="project-card">
+        <div class="card-top"><span class="project-no">01</span><span class="project-type">DATA PROJECT</span></div>
+        <h3>Retail Sales Analysis</h3>
+        <p>Analyzed retail sales data to explore sales performance, customer trends and business-oriented insights.</p>
+        <div class="tags"><span>SQL</span><span>Analysis</span></div>
+        <a class="project-link" href="https://github.com/SJ-2410/Retail-Sales-Analysis" target="_blank" rel="noopener">View project <span>↗</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="card-top"><span class="project-no">02</span><span class="project-type">DATA PROJECT</span></div>
+        <h3>Granola Health Analysis</h3>
+        <p>Explored nutrition-related data to compare health characteristics and identify patterns in the dataset.</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>EDA</span></div>
+        <a class="project-link" href="https://github.com/SJ-2410/Granola-Health-Analysis" target="_blank" rel="noopener">View project <span>↗</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="card-top"><span class="project-no">03</span><span class="project-type">DATA PROJECT</span></div>
+        <h3>Deepest Diving Animals Analysis</h3>
+        <p>Explored diving-depth data to compare animals and understand patterns in their diving capabilities.</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>Analysis</span></div>
+        <a class="project-link" href="https://github.com/SJ-2410/Deepest-Diving-Animals-Analysis" target="_blank" rel="noopener">View project <span>↗</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="card-top"><span class="project-no">04</span><span class="project-type">DATA PROJECT</span></div>
+        <h3>Flight Delays Analysis</h3>
+        <p>Investigated flight-delay data to explore delay patterns and communicate analytical observations.</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>Visualization</span></div>
+        <a class="project-link" href="https://github.com/SJ-2410/Flight-Delays-Analysis" target="_blank" rel="noopener">View project <span>↗</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="card-top"><span class="project-no">05</span><span class="project-type">DATA PROJECT</span></div>
+        <h3>Coffee Survey Analysis</h3>
+        <p>Explored survey responses to understand coffee preferences, habits and relationships within the data.</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>Visualization</span></div>
+        <a class="project-link" href="https://github.com/SJ-2410/Coffee-Survey-Analysis" target="_blank" rel="noopener">View project <span>↗</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="card-top"><span class="project-no">06</span><span class="project-type">DATA PROJECT</span></div>
+        <h3>A Century of Top Songs Analysis</h3>
+        <p>Explored a century of top-song data to discover patterns and trends across music data.</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+        <a class="project-link" href="https://github.com/SJ-2410/A-Century-of-Top-Songs-Analysis" target="_blank" rel="noopener">View project <span>↗</span></a>
+      </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="section-label">04 / EDUCATION</div>
+      <div class="education-card">
+        <div>
+          <p class="eyebrow-small">BACHELOR'S DEGREE</p>
+          <h2>Bachelor of Computer Applications</h2>
+          <p class="muted">CCS University (CCSU)</p>
+        </div>
+        <div class="education-year">2023 — 2026</div>
+      </div>
+    </section>
+
+    <section class="section cert-section" id="certifications">
+      <div class="section-label">05 / CERTIFICATIONS</div>
+      <div>
+        <h2>Learning & credentials</h2>
+        <div class="cert-grid">
+          <div class="cert"><strong>Data Analytics Essentials</strong><span>Cisco Networking Academy · Jun 2026</span></div>
+          <div class="cert"><strong>AI Fundamentals</strong><span>Cisco Networking Academy · Jun 2026</span></div>
+          <div class="cert"><strong>YUVA AI for All</strong><span>NASSCOM · Jan 2026</span></div>
+          <div class="cert"><strong>Introduction to Tableau</strong><span>Simplilearn · Sep 2025</span></div>
+          <div class="cert"><strong>SQL for Data Science</strong><span>Simplilearn · Sep 2025</span></div>
+          <div class="cert"><strong>Deloitte Data Analytics Job Simulation</strong><span>Forage · Aug 2025</span></div>
+          <div class="cert"><strong>Career Essentials in Data Analysis</strong><span>LinkedIn · Aug 2025</span></div>
+          <div class="cert"><strong>Python Full Course</strong><span>GeeksforGeeks · Jul 2025</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <p class="kicker">06 / CONTACT</p>
+        <h2>Let’s connect.</h2>
+        <p>I’m open to entry-level Data Analyst, Data Analytics Internship and Apprenticeship opportunities.</p>
+        <div class="contact-buttons">
+          <a href="https://www.linkedin.com/in/swati-joshi-3a6613349" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/SJ-2410" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <span>© 2026 Swati Joshi</span>
-    <span>Built for a career in data analytics.</span>
+    <span>Data Analyst Portfolio · <a href="#home">Back to top ↑</a></span>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
