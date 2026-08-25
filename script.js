@@ -1,15 +1,4 @@
-const menu = document.querySelector(".menu");
-const nav = document.querySelector(".nav nav");
-if (menu) {
-  menu.addEventListener("click", () => {
-    nav.style.display = nav.style.display === "flex" ? "" : "flex";
-    nav.style.position = "absolute";
-    nav.style.top = "74px";
-    nav.style.right = "24px";
-    nav.style.flexDirection = "column";
-    nav.style.background = "white";
-    nav.style.padding = "18px";
-    nav.style.border = "1px solid #e4e7ee";
-    nav.style.borderRadius = "12px";
-  });
-}
+const menu=document.querySelector('.menu'),nav=document.querySelector('.nav nav');
+menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)});
+nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu?.setAttribute('aria-expanded','false')}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
